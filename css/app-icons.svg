@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<clipPath id="rm-bc">
+			<path id="rm-bc-path" d="M0,0 h16 v16 h-5 v-8 h-6 v8 h-5z"/>
+		</clipPath>
+		<clipPath id="rm-tc">
+			<path d="M0,0 h5 v8 h6 v-8 h5 v16 h-16z"/>
+		</clipPath>
+		<clipPath id="rm-br">
+			<path id="rm-br-path" d="M0,0 h16 v8 h-6.5 q-0.5,0 -0.5,0.5 v7.5 h-8 z"/>
+		</clipPath>
+		<clipPath id="rm-q2">
+			<path d="M0,0 h16 v7.5 h-8 q-0.5,0 -0.5,0.5 v8 h-7.5 z"/>
+		</clipPath>
+		<clipPath id="rm-r">
+			<path d="M0,0 h10 v16 h-10z"/>
+		</clipPath>
+		<clipPath id="rm-cl">
+			<path d="M0,0 h16 v6 h-16 v4 h16 v6 h-16z"/>
+		</clipPath>
+	</defs>
+
+	<symbol id="ic-arrow" viewBox="0,0 16,16">
+		<polygon points="8,2 13,7 12,8 10,8 10,14 6,14 6,8 4,8 3,7"/>
+	</symbol>
+	<symbol id="ic-arrow-small" viewBox="0,0 16,16">
+		<use href="#ic-arrow" xlink:href="#ic-arrow" width="50%" height="50%" x="4" y="4"/>
+	</symbol>
+	<symbol id="ic-ban-circle" viewBox="0,0 16,16">
+		<use href="#sp-circle" xlink:href="#sp-circle"/>
+		<path d="M 12,2.75 l -9,9 l 1,1.5 l 9,-9 z"/>
+	</symbol>
+	<symbol id="ic-blackboard" viewBox="0,0 16,16">
+		<path d="M3.5,3 h9 q0.5,0 0.5,0.5 v5 q0,0.5 -0.5,0.5 h-9 q-0.5,0 -0.5,-0.5 v-5 q0,-0.5 0.5,-0.5 z"/>
+		<path d="
+			M4.5,9.5 h8.5 q0.25,0.5 0,1 h-3 l3,3 q-0.5,0.5 -1.25,0 l-3,-3 h-1.5 l-3,3 q-0.5,0.5 -1.25,0 l3,-3 h-3 q-0.25,-0.5 0,-1 z 
+			m0.5,2 h6 v1 h-6 z
+		"/>
+	</symbol>
+	<symbol id="ic-briefcase" viewBox="0,0 16,16">
+		<path d="
+			M2,4 l-1,1 v8 l1,1 h12 l1,-1 v-8 l-1,-1 h-4 v-1 q0,-1 -1,-1 h-2 q-1,0 -1,1 v1z
+				m0,1 h1 v3 h10 v-3 h1 v4 h-5 v1 h-2 v-1 h-5z
+				m5,-1 v-1 h2 v1z
+		"/>
+	</symbol>
+	<symbol id="ic-broadcast" viewBox="0,0 16,16">
+		<g style="clip-path:url(#rm-bc);">
+			<use href="#sp-circle" xlink:href="#sp-circle" />
+			<use href="#sp-circle" xlink:href="#sp-circle" width="60%" height="60%" x="3.25" y="3.25"/>
+		</g>
+		<path d="
+			M8,6 h0.5 q0.5,0 0.5,0.5 v1 q0,0.5 -0.5,0.5 h-1 q-0.5,0 -0.5,-0.5 v-1 q0,-0.5 0.5,-0.5 z 
+			m0.5,0.5 h-1 v1 h1 z 
+			m-3.5,1.5 h4 q1,0 1,1 v2 h-1 v3 c0,1 -2,1 -2,0 v-3 h-1 v-2 q0,-1, 1,-1 z
+		"/>
+	</symbol>
+	<symbol id="ic-bullhorn" viewBox="0,0 16,16">
+		<path d="M6.5,5 h-3 a-2.5,2.5 0,1,0 0,5 h1 l-1,3 q0.5,1 2,0.5 l1,-3.4 l4,2 q0.5,0.5 1,0 v-9 q-0.5,-0.5 -1,0 z" />
+		<path d="
+			M12,5 q1,2.5 0,5 q2,-2.5 0,-5 z 
+			m1,-3 q2,5 0,11 q4,-5.5 0,-11 z
+		"/>
+	</symbol>
+	            
+	<symbol id="ic-calendar" viewBox="0,0 16,16">
+		<path id="sp-calform" d="
+			M1,4 v10 q0,1 1,1 h12 q1,0 1,-1 v-11 q0,-1 -1,-1 h-1 v1 q0,1 -1,1 h-1 q-1,0 -1,-1 v-1 h-4 v1 q0,1 -1,1 h-1 q-1,0 -1,-1 v-1 h-1 q-1,0 -1,1 z 
+			m1,1 h12 v9 h-12z m2,-4 h1 v2 h-1z m7,0 h1 v2 h-1 z
+		"/>
+		<path d="
+			M5.25,6  h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z 
+			m-9,2    h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z 
+			m-9,2    h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z 
+			m-9,2    h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z
+		"/>
+	</symbol>
+	<symbol id="ic-chevron-down"  viewBox="0,0 16,16"><polygon id="sp-chevron" points="8,8 11,5 13,6 8,11 3,6 5,5"/></symbol>
+	<symbol id="ic-chevron-left"  viewBox="0,0 16,16"><use href="#sp-chevron" xlink:href="#sp-chevron" transform="rotate(90,8,8)"/></symbol>
+	<symbol id="ic-chevron-right" viewBox="0,0 16,16"><use href="#sp-chevron" xlink:href="#sp-chevron" transform="rotate(-90,8,8)"/></symbol>
+	<symbol id="ic-chevron-up"    viewBox="0,0 16,16"><use href="#sp-chevron" xlink:href="#sp-chevron" transform="rotate(180,8,8)"/></symbol>	            
+	<symbol id="ic-cloud-download" viewBox="0,0 16,16">
+		<g id="clip-cloud" clip-path="url(#rm-bc)">
+			<path id="sp-cloud" d="
+				M6,10.75 h-2.5 a2.5,2.5 0,1,1 0,-5 a3.5,2.75 0,1,1 8.5,-1 a3,3 0,1,1 0,6 z 
+				m6,-1 a2,2 0,1,0 0,-4 h-1 v-1 a2.5,1.75 0,1,0 -6.4,1 v1 h-1 a1.5,1.5 0,1,0 0,3 h2.5 z
+			"/>
+		</g>
+		<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" y="-3" transform="rotate(180,8,8)"/>
+	</symbol>
+	<symbol id="ic-cloud-upload" viewBox="0,0 16,16">
+		<use href="#clip-cloud" xlink:href="#clip-cloud" />
+		<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" y="3" />
+	</symbol>
+	
+	<symbol id="ic-database" viewBox="0,0 16,16">
+		<path d="
+			M2,3    a6,2 0,0,1 12,0 v2 a6,2 0,0,1 -12,0 z
+				m2,0 a4,1 0,1,0 0,-0.1 z
+			m-2,3   a6,2 0,0,0 12,0 v3 a6,2 0,0,1 -12,0 z
+			m0,4  a6,2 0,0,0 12,0 v3 a6,2 0,0,1 -12,0 z
+		"/>
+	</symbol>
+	<symbol id="ic-doc-open" viewBox="0,0 16,16">
+		<path id="sp-file" d="
+			M3,1 q-1,0 -1,1 v12 q0,1 1,1 h10 q1,0, 1,-1 v-9.5 l-3.5,-3.5z
+			m0,1 h7 l3,3 v9 h-10z
+		"/>
+		<path d="
+			M4,4 v1 h4 v-1z
+			m0,3 v1 h7 v-1z
+			m0,2 v1 h7 v-1z
+			m0,2 v1 h7 v-1z
+		"/>
+	</symbol>
+	<symbol id="ic-download" viewBox="0,0 16,16">
+		<g clip-path="url(#rm-tc)">
+			<path id="sp-desktop" d="
+				M2,2 h12 q1,0 1,1 v8 q0,1 -1,1 h-5 c0,2 2,0 3,2 h-8 c1,-2 3,0 3,-2 h-5 q-1,0 -1,-1 v-8 q0,-1 1,-1 z 
+				m0,1 v7 h12 v-7 z
+			"/>
+		</g>
+		<use href="#ic-arrow" xlink:href="#ic-arrow" y="6.25" x="3.2" width="60%" height="65%" transform="rotate(180,8,8)"/>
+	</symbol>
+	
+	<symbol id="ic-edit" viewBox="0,0 16,16">
+		<g id="clip-34sq" clip-path="url(#rm-q2)" transform="rotate(-90,8,8)">
+			<path id="sp-sqr" d="
+				M3,2 q-1,0 -1,1 v10 q0,1 1,1 h10 q1,0 1,-1 v-10 q0,-1 -1,-1z
+					m0,1 h10 v10 h-10z
+			"/>
+		</g>
+		<use href="#ic-pencil" xlink:href="#ic-pencil" width="50%" height="50%" x="7" y="1" />
+	</symbol>
+	<symbol id="ic-envelope" viewBox="0,0 16,16">
+		<path d="
+			M2,3 h12 q1,0 1,1 v8 q0,1 -1,1 h-12 q-1,0 -1,-1 v-8 q0,-1 1,-1 z 
+			m0,1 l6,5 l6,-5 z 
+			m0,1 v7 l4,-3.5 z 
+			m12,0 l-4,3.5 l4,3.5 z 
+			m-1,7 l-3.5,-3 l-1.5,1.25 l-1.5,-1.25 l-3.5,3 z
+		"/>
+	</symbol>
+	<symbol id="ic-erase" viewBox="0,0 16,16">
+		<path d="
+			M7.5,11 h4 l1.5,-1.5 q0.5,-0.5 0,-1 l-6,-6 q-0.5,-0.5 -1,0 l-3,3 q-0.5,0.5 0,1z
+			m-1,-2 l-3,-3 l3,-3 l3,3z
+		"/>
+		<path d="M3,12 q-1,0 -1,1 h12 q0,-1 -1,-1z"/>
+	</symbol>
+	<symbol id="ic-export" viewBox="0,0 16,16">
+		<path id="sp-dp1" d="
+			M2,11 h11 q1,0 1,1 v1 q0,1 -1,1 h-10 q-1,0 -1,-1 v-1 q0,-1 1,-1 z
+			m11,1 h-1 v0.5 h1 z
+			m-2,0 h-1 v0.5 h1 z
+		"/>
+		<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" y="-4" transform="rotate(45,8,8)"/>
+		<path d="M7.5,7 l1.5,1.5 l-0.5,0.5 l-1.5,-1.5 z"/>
+	</symbol>
+	<symbol id="ic-eye-close" viewBox="0,0 16,16">
+		<use href="#ic-eye-open" xlink:href="#ic-eye-open"/>
+		<polygon points="1,13 1,15 15,3 15,1"/>
+	</symbol>
+	<symbol id="ic-eye-open" viewBox="0,0 16,16">
+		<path d="
+			M1,8  c3,-6 11,-6.5 14,0 c-3,6 -11,6.5 -14,0 z 
+			m1,0  c2.5,5.25 10,4.25 12,0 c-2.5,-5.25 -10,-4.25 -12,0 
+			m6,-3 a3,3 0,1,0 0.1,0 
+			m0,2  a1,1 0,1,1 -0.1,0 
+			m1,-1 a9,4 0,0,1 0,4 a7,4 0,0,0 0,-4 z
+		"/>
+	</symbol>
+	
+	<symbol id="ic-floppy-save" viewBox="0,0 16,16">
+		<g clip-path="url(#rm-br)">
+			<path id="sp-floppy" d="
+				M3,2 h2 v3 h6 v-3 h1 l2,2 v9.5 l-0.5,0.5 h-1.5 v-4 h-8 v4 h-1.5 l-0.5,-0.5 v-11 l0.5,-0.5 z 
+				m6,0 h1 v2 h-1 z
+			"/>
+		</g>
+		<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" transform="rotate(180,8,8)" y="-3.5" x="-3.5" height="95%"/>
+	</symbol>
+	
+	<symbol id="ic-gear" viewBox="0,0,16,16">
+		<path id="sp-gear" d="
+			M8,3 a5,5 0,1,0 0.1,0 
+				m0,2 a3,3 0,1,1 -0.1,0 z 
+			M9,1 h-2 l-0.5,2.5 h3 z 
+			M7,15 h2 l0.5,-2.5 h-3 z 
+			M15,9 v-2 l-2.5,-0.5 v3 z 
+			M1,7 v2 l2.5,0.5 v-3 z
+		" />
+		<use href="#sp-gear" xlink:href="#sp-gear" transform="rotate(45,8,8)"/>
+	</symbol>
+	
+	<symbol id="ic-hhd" viewBox="0,0 16,16">
+		<use href="#sp-dp1" xlink:href="#sp-dp1" y="-1"/>
+		<path d="M2.5,9.5 h11 l-2.5,-6 q-.25,-.5 -0.5,-0.5 h-5 q-0.25,0 -0.5,0.5 z"/>
+	</symbol>
+	<symbol id="ic-home" viewBox="0,0 16,16">
+		<path d="
+			M1,9 l7,-7 l3,3 v-2 h1.5 v3.5 l2.5,2.5 h-2 l-1,4.5 q0,0.5, -0.25,0.5 h-7.5 q-0.25,0 -0.25,-0.5 l-1,-4.5 z 
+			m2.5,-1.25 l1.25,5.5 h2.25 v-3.25 h2 v3.25 h2.25 l1.25,-5.5 l-4.5,-4.5 z
+		"/>
+	</symbol>
+	
+	<symbol id="ic-import" viewBox="0,0 16,16">
+		<use href="#sp-dp1" xlink:href="#sp-dp1"/>
+		<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" x="-1.4" y="0.25" transform="rotate(135,8,8)"/>
+		<path d="M7,3.5 l-1.5,1.5 l-0.5,-0.5 l1.5,-1.5z"/>
+	</symbol>
+	<symbol id="ic-info-sign" viewBox="0,0 16,16">
+		<use href="#sp-circle" xlink:href="#sp-circle"/>
+		<path d="M6,8 q0,-1 1,-1 h1 q1,0 1,1 v3 h1 q0,1 -1,1 h-1 q-1,0 -1,-1 v-3z m2,-4 a1,1 0,1,0 0.1,0z"/>
+	</symbol>
+	
+	<symbol id="ic-link" viewBox="0,0 16,16">
+		<path id="sp-link" d="M4.5,10 h-0.5 a3,3.5 0,1,1 0,-7 h3.25 a3,3.5 0,1,1 0.5,7 v-1 a2,2.5 0,1,0 -0.5,-5 h-3.25 a2,2.5 0,1,0 0,5 h0.5z"/>
+		<use href="#sp-link" xlink:href="#sp-link" transform="rotate(180,8,8)"/>
+	</symbol>
+	<symbol id="ic-link-external" viewBox="0,0 16,16">
+		<use href="#sp-sqr" xlink:href="#sp-sqr" clip-path="url(#rm-q2)" transform="rotate(-90,8,8)"/>
+		<use href="#ic-arrow" xlink:href="#ic-arrow" width="70%" height="70%" x="2.35" y="-1.85" transform="rotate(45,8,8)" />
+	</symbol>
+	<symbol id="ic-list" viewBox="0,0 16,16">
+		<path d="
+			M3,2.25 q-1,0 -1,1 q0,1 1,1 q1,0 1,-1 q0,-1 -1,-1z  m2.5,0 q-0.5,0 -0.5,0.5 v1 q0,0.5 0.5,0.5 h8 q0.5,0 0.5,-0.5 v-1 q0,-0.5 -0.5,-0.5z
+			m-2.5,3.25 q-1,0 -1,1 q0,1 1,1 q1,0 1,-1 q0,-1 -1,-1z m2.5,0 q-0.5,0 -0.5,0.5 v1 q0,0.5 0.5,0.5 h8 q0.5,0 0.5,-0.5 v-1 q0,-0.5 -0.5,-0.5z
+			m-2.5,3.25 q-1,0 -1,1 q0,1 1,1 q1,0 1,-1 q0,-1 -1,-1z m2.5,0 q-0.5,0 -0.5,0.5 v1 q0,0.5 0.5,0.5 h8 q0.5,0 0.5,-0.5 v-1 q0,-0.5 -0.5,-0.5z
+			m-2.5,3 q-1,0 -1,1 q0,1 1,1 q1,0 1,-1 q0,-1 -1,-1z m2.5,0 q-0.5,0 -0.5,0.5 v1 q0,0.5 0.5,0.5 h8 q0.5,0 0.5,-0.5 v-1 q0,-0.5 -0.5,-0.5z
+		"/>
+	</symbol>
+	<symbol id="ic-list-alt" viewBox="0,0 16,16">
+		<use href="#sp-sqr" xlink:href="#sp-sqr"/>
+		<use href="#ic-list" xlink:href="#ic-list" width="60%" height="60%" x="3" y="3.25"/>
+	</symbol>
+	<symbol id="ic-lock" viewBox="0,0 16,16">
+		<path d="
+			M4,4 a4,3 0,0,1 8,0 v2 h1 q1,0 1,1 v7 q0,1,-1,1 h-10 q-1,0 -1,-1 v-7 q0,-1 1,-1 h1 z
+				m6,0 a2,1.5 0,0,0 -4,0 v2 h4 z
+				m-6,3 v7 h9 v-7 z
+				m1,1 h1 v1 h-1z
+				m0,2 h1 v1 h-1z 
+				m0,2 h1 v1 h-1z
+		"/>
+	</symbol>
+	<symbol id="ic-log-in" viewBox="0,0 16,16">
+		<use href="#sp-door" xlink:href="#sp-door" />
+		<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" transform="rotate(-90,8,8)" y="3"/>
+	</symbol>
+	<symbol id="ic-log-out" viewBox="0,0 16,16">
+		<g id="sp-door" clip-path="url(#rm-r)">
+			<use href="#sp-sqr" xlink:href="#sp-sqr"/>
+		</g>
+		<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" transform="rotate(90,8,8)" y="-3"/>
+	</symbol>
+	
+	<symbol id="ic-menu-down" viewBox="0,0 16,16"><use href="#ic-chevron-down" xlink:href="#ic-chevron-down"/></symbol>
+	<symbol id="ic-menu-left" viewBox="0,0 16,16"><use href="#ic-chevron-left" xlink:href="#ic-chevron-left"/></symbol>
+	
+	
+	<symbol id="ic-off" viewBox="0,0 16,16">
+		<use href="#sp-circle" xlink:href="#sp-circle" clip-path="url(#rm-tc)"/>
+		<path d="M7.5,1 h1 q0.5,0 0.5,0.5 v3.5 q0,0.5 -0.5,0.5 h-1 q-0.5,0 -0.5,-0.5 v-3.5 q0,-0.5 0.5,-0.5z m1,0.5 h-1 v2 h1z"/>
+	</symbol>	 
+	<symbol id="ic-ok" viewBox="0,0 16,16">
+		<polygon points="6,10 12,3 14,4 6,13 2,9 4,8"/>
+	</symbol>
+	<symbol id="ic-ok-circle" viewBox="0,0 16,16">
+		<use href="#sp-circle" xlink:href="#sp-circle"/>
+		<use href="#ic-ok" xlink:href="#ic-ok" width="60%" height="60%" x="3.25" y="3.25"/>
+	</symbol>
+	<symbol id="ic-open-file" viewBox="0,0 16,16">
+		<use href="#sp-file" xlink:href="#sp-file"/>
+		<use href="#ic-search" xlink:href="#ic-search" width="60%" height="60%" x="4" y="4.5"/>
+		<path d="M7,6.5 h2 v0.5 h-2z m-1,1 h4 v0.5 h-4z m1,1 h4 v0.5 h-4z m-1.5,1 h5 v0.5 h-5z"/>
+	</symbol>
+	            
+	            
+	<symbol id="ic-pencil" viewBox="0,0 16,16">
+		<path d="M2,11 v3 h3 l6.5,-7 l-3,-3 z M5,13 h-2 v-2 h1 v1 h1 z M9,3.5 l3,3 l1,-1 a1.5,1.5 0,1,0 -3,-3 z"/>
+	</symbol>
+	<symbol id="ic-plus" viewBox="0,0 16,16">
+		<path d="M7,2 h2 v5 h5 v2 h-5 v5 h-2 v-5 h-5 v-2 h5 z"/>
+	</symbol>
+	<symbol id="ic-plus-sign" viewBox="0,0 16,16">
+		<use href="#sp-circle" xlink:href="#sp-circle"/>
+		<use href="#ic-plus" xlink:href="#ic-plus" width="60%" height="60%" x="3.25" y="3.25"/>
+	</symbol>
+	<symbol id="ic-print" viewBox="0,0 16,16">
+		<path d="M2,6 h2 l1,2 h6 l1,-2 h2 v7 h-2 v-2 h-8 v2 h-2z m3,0 l1,-4 h4 l1,4 l-1,1 h-4z m0,6 h6 l1,2 h-8z"/>
+	</symbol>
+	
+	<symbol id="ic-question-sign" viewBox="0,0 16,16">
+		<use href="#sp-circle" xlink:href="#sp-circle"/>
+		<path d="M7,10 h2 v2 h-2z m0,-1 q0,-1 1,-1 q1,0 1,-1 q0,-1 -1,-1 q-1,0 -1,1 h-2 a3,3 0,1,1 6,0 c0,2.5 -1,0.5 -2,2z"/>
+	</symbol>
+	
+	<symbol id="ic-recycle" viewBox="0,0 16,16">
+		<path d="
+			M1,3 a7,2 0,0,1 14,0 l-2,10 a5,1 0,0,1 -10,0z
+				m1,0 a6,1 0,1,0 0,-0.1z
+				m0,1 l2,10 a4,1 0,0,0 8,0 l2,-10 a6,1 0,0,1 -12,0z
+		"/>
+		<use href="#ic-refresh" xlink:href="#ic-refresh" width="50%" height="50%" x="4" y="5"/>
+	</symbol>
+	<symbol id="ic-refresh" viewBox="0,0 16,16">
+		<g clip-path="url(#rm-cl)">
+			<use href="#sp-circle"  xlink:href="#sp-circle"  width="85%" height="85%" x="1.25" y="1.25"/>
+		</g>
+		<path id="sp-rhead" d="M1.65,5.5 l-1,0.5 l2.5,3 l2.5,-3 l-1,-0.5 z"/>
+		<use href="#sp-rhead" xlink:href="#sp-rhead" transform="rotate(180,8,8)"/>
+	</symbol>
+	<symbol id="ic-remove" viewBox="0,0 16,16">
+		<use href="#ic-plus" xlink:href="#ic-plus" transform="rotate(45,8,8)"/>
+	</symbol>
+	<symbol id="ic-remove-sign" viewBox="0,0 16,16">
+		<use href="#ic-plus-sign" xlink:href="#ic-plus-sign" transform="rotate(45,8,8)"/>
+	</symbol>
+
+	<symbol id="ic-search" viewBox="0,0 16,16">
+		<use href="#sp-circle" xlink:href="#sp-circle" width="75%" height="75%" x="1" y="1"/>
+		<path d="M11,10 l-1.5,1.5 l3,3 a1,1 0,0,0 1.5,-1.5z"/>
+	</symbol>
+	<symbol id="ic-sort" viewBox="0,0 16,16">
+		<g id="gp1">
+			<use href="#ic-arrow-small" xlink:href="#ic-arrow-small" x="-3" y="-3" />
+			<path d="M4,9 h2 v1 h-2z m0,2 h2 v0.5 q0,0.5 -0.5,0.5 h-1 q-0.5,0 -0.5,-0.5z"/>
+		</g>
+		<use href="#gp1" xlink:href="#gp1" transform="rotate(180,8,8)"/>
+	</symbol>
+
+	<symbol id="ic-tags" viewBox="0,0 16,16">
+		<path d="M4,2 a2,2 0,0,0 -2,2 v3 q0,0.5 0.5,1 l6,6 q0.5,0.5 1,0 l4.5,-4.5 q0.5,-0.5 0,-1 l-6,-6 q-0.5,-0.5 -1,-0.5z m0,1 h3 l6,6 l-4,4 l-6,-6 v-3 a1,1 0,0,1 1,-1z m1,1 a1,1 0,1,0 0.1,0z"/>
+	</symbol>
+	<symbol id="ic-tasks" viewBox="0,0 16,16">
+		<path d="
+			M3,2 q-1,0 -1,1 v1 q0,1 1,1 h10 q1,0 1,-1 v-1 q0,-1 -1,-1z
+				m0,1 h4 v1 h-4z
+			m0,3.5 q-1,0 -1,1 v1 q0,1 1,1 h10 q1,0 1,-1 v-1 q0,-1 -1,-1z
+				m0,1 h9 v1 h-9z
+			m0,3.5 q-1,0 -1,1 v1 q0,1 1,1 h10 q1,0 1,-1 v-1 q0,-1 -1,-1z
+				m0,1 h6 v1 h-6z
+		"/>
+	</symbol>
+	<symbol id="ic-transfer" viewBox="0,0 16,16">
+		<use href="#ic-sort" xlink:href="#ic-sort" transform="rotate(90,8,8)"/>
+	</symbol>
+	<symbol id="ic-trash" viewBox="0,0 16,16">
+		<path d="
+			M2.5,2 q-0.5,0 -0.5,0.5 v2 q0,0.5, 0.5,0.5 h0.5 v9 q0,1 1,1 h8 q1,0 1,-1 v-9 h0.5 q0.5,0 0.5,-0.5 v-2 q0,-0.5, -0.5,-0.5 h-2.5 c-0.5,0 0,-1 -1,-1 h-4 c-1,0 -0.5,1 -1,1 z
+				m2.5,1 h8 v1 h-8.25z
+				m0,2 h1 v8 h1 v-8 h1 v8 h1 v-8 h1 v8 h1 v-8 h1 v9 h-5 q-2,0 -2,-9z
+		"/>
+	</symbol>
+	<symbol id="ic-triangle-left" viewBox="0,0 16,16">
+		<polygon points="4,8 10,2 10,14"/>
+	</symbol>
+	
+	<symbol id="ic-user" viewBox="-8,-8 16,16">
+		<path id="sp-fc1" d="M0,-7 c4,0 4,6 1.5,8 m0.5,-1 v1 l2,1 q3,1 3,5 h-7 v-14z"/>
+		<use xlink:href="#sp-fc1" transform="scale(-1,1)"/>
+	</symbol>
+	
+	<symbol id="ic-warning-sign" viewBox="0,0 16,16">
+		<path d=""/>
+	</symbol>	
+
+
+	
+	<symbol id="sp-circle" viewBox="0,0 16,16">
+		<path d="M8,1 a7,7 0,1,0 0.1,0 m0,1.5 a5.5,5.5 0,1,1 -0.1,0 z"/>
+	</symbol>
+
+	<symbol id="u-grid" viewBox="0,0,160,160" >
+		<g id="u-gx" stroke="#ccc" stroke-width="0.5">
+			<line x1="0" x2="160" y1="0"   y2="0"/>
+			<line x1="0" x2="160" y1="10"  y2="10"/>
+			<line x1="0" x2="160" y1="20"  y2="20"/>
+			<line x1="0" x2="160" y1="30"  y2="30"/>
+			<line x1="0" x2="160" y1="40"  y2="40" stroke="#999"/>
+			<line x1="0" x2="160" y1="50"  y2="50"/>
+			<line x1="0" x2="160" y1="60"  y2="60"/>
+			<line x1="0" x2="160" y1="70"  y2="70"/>
+			<line x1="0" x2="160" y1="80"  y2="80" stroke="#000"/>
+			<line x1="0" x2="160" y1="90"  y2="90"/>
+			<line x1="0" x2="160" y1="100" y2="100"/>
+			<line x1="0" x2="160" y1="110" y2="110"/>
+			<line x1="0" x2="160" y1="120" y2="120"stroke="#999"//>
+			<line x1="0" x2="160" y1="130" y2="130"/>
+			<line x1="0" x2="160" y1="140" y2="140"/>
+			<line x1="0" x2="160" y1="150" y2="150"/>
+			<line x1="0" x2="160" y1="160" y2="160"/>
+		</g>
+		<use href="#u-gx" xlink:href="#u-gx" transform="rotate(90,80,80)"/>
+	</symbol>
+</svg>

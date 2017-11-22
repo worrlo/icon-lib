@@ -1,0 +1,11 @@
+.app-icons {
+    display:inline-block;
+    width:2em;
+    height:2em;
+    vertical-align: middle;
+    fill:currentColor;
+}
+.render-canvas {
+    width:1px;
+    height:1px;
+}

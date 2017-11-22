@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Icon Cheat Sheet</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app-icons.js"></script>
+    <script type="text/javascript">
+        function log(message) {
+            if (window.console) {
+                window.console.log("[{0}] PAGE: {1}".format(new Date(), message));
+            }
+            else {
+                alert( message );
+            }
+        }
+
+        $(function() {
+            "use strict";
+            log("document load");
+            var template = $("#template").detach(),
+                db = sessionStorage;
+            template.removeAttr("id");
+        
+            function displayIcons(outletId, data) {
+                log("displayIcons called. (total: {0}, outlet: {1})".format(data.length, outletId))
+                var outlet = $(outletId);
+                if (!data) {
+                    outlet.append("<h1>No Data Provided</h1>");
+                }
+                else {
+                    $(data).each(function(i,e){
+                        var row = template.clone(),
+                            idVal = "#" + $(e).attr("id");
+                        row.find("label").html(idVal);
+                        row.find(".ic")
+                                .attr("xlink:href", idVal)
+                                .attr("href", idVal);
+                        outlet.append(row);
+                    });
+                }
+            }
+
+            $("#grid-toggle").click(function() {
+                $(".grid").toggle();
+            });
+            $("#app-icons").on("icons-loaded", function() {
+                displayIcons("#app", $("#app-icons").find("symbol"));
+            });
+            log("bind complete");
+            displayIcons("#local", $("#local-icons").find("symbol"));
+
+            $("#draw").click(function() {
+                $("#canvas").html($("#path").val());
+            });
+        });
+    </script> 
+    <style type="text/css">
+        #path {
+            margin-top: 1em;
+            font-family: "Courier New";
+            width: 100%;
+            height: 10em;
+        }
+        .ic-mod {font-size: 12pt;}
+        .ic-mod label {display:inline-block; width: 10em;}
+        .app-icon {
+            width: 10em;
+            height: 10em;
+            border: 1px solid black;
+        }
+        .boat {
+            display: inline-block;
+            position: fixed;
+            text-align: right;
+            top: 0;
+            right: 1em;
+            width: 10em;
+            z-index: 99;
+            background:white;
+        }
+    </style> 
+</head>
+<body class="container-fluid">
+    <div class="boat">
+        <label>Toggle Grid: <input id="grid-toggle" type="checkbox" checked/></label>
+    </div>
+    <div id="template" class="ic-mod">
+        <svg class="app-icon"><use class="ic" xlink:href="" href=""/><use class="grid" xlink:href="#u-grid" href="#u-grid"/></svg>
+        <label></label>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <h1>App Icons</h1>
+            <div id="app">
+
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div>
+                <textarea id="path"></textarea>
+                <button id="draw">Draw</button>
+            </div>
+            <svg class="app-icon" viewBox="0,0,16,16" style="font-size:13pt;">
+                <g id="canvas">
+                </g>>
+                <use class="grid" href="#u-grid" xlink:href="#u-grid" />
+            </svg>
+            <div id="local">
+                <svg class="app-icon"><use xlink:href="#ic-broadcast"/></svg>
+            </div>
+        </div>
+    </div>
+    <svg id="local-icons" class="render-canvas"></svg>
+</body>
+</html>
