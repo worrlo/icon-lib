@@ -53,6 +53,9 @@
             });
             $("#app-icons").on("icons-loaded", function() {
                 displayIcons("#app", $("#app-icons").find("symbol"));
+                $("#app-icons")
+                    .toggle()                 // Safari correction for auto-display
+                    .css("display", "");      // Reset display settings
             });
             log("bind complete");
             displayIcons("#local", $("#local-icons").find("symbol"));

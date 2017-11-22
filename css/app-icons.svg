@@ -364,11 +364,14 @@
 	</symbol>
 	
 	<symbol id="ic-warning-sign" viewBox="0,0 16,16">
-		<path d=""/>
+		<path d="
+			M2,11.5 q-1,1.5 0,2.5 h12 q1,-1 0,-2.5 l-5,-9 q-1,-1 -2,0 z
+			m7,1 h-2 v-2 h2z
+			m0,-3 h-2 v-4 h2z
+		"/>
 	</symbol>	
 
 
-	
 	<symbol id="sp-circle" viewBox="0,0 16,16">
 		<path d="M8,1 a7,7 0,1,0 0.1,0 m0,1.5 a5.5,5.5 0,1,1 -0.1,0 z"/>
 	</symbol>

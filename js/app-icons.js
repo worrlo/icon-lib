@@ -32,9 +32,6 @@
         });
         log("renderIcon called. (total: {0})".format(data.length));
 
-        outlet.toggle()                 // Safari correction for auto-display
-              .css("display", "");      // Reset display settings
-
         win.setTimeout(function() {
             log("init trigger");
             outlet.trigger("icons-loaded");
