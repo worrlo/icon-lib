@@ -5,19 +5,23 @@
 			<path id="rm-bc-path" d="M0,0 h16 v16 h-5 v-8 h-6 v8 h-5z"/>
 		</clipPath>
 		<clipPath id="rm-tc">
-			<path d="M0,0 h5 v8 h6 v-8 h5 v16 h-16z"/>
+			<path id="rm-tc-path" d="M0,0 h5 v8 h6 v-8 h5 v16 h-16z"/>
 		</clipPath>
 		<clipPath id="rm-br">
 			<path id="rm-br-path" d="M0,0 h16 v8 h-6.5 q-0.5,0 -0.5,0.5 v7.5 h-8 z"/>
 		</clipPath>
 		<clipPath id="rm-q2">
-			<path d="M0,0 h16 v7.5 h-8 q-0.5,0 -0.5,0.5 v8 h-7.5 z"/>
+			<path id="rm-q2-path" d="M0,0 h16 v7.5 h-8 q-0.5,0 -0.5,0.5 v8 h-7.5 z"/>
 		</clipPath>
 		<clipPath id="rm-r">
-			<path d="M0,0 h10 v16 h-10z"/>
+			<path id="rm-r-path" d="M0,0 h10 v16 h-10z"/>
 		</clipPath>
 		<clipPath id="rm-cl">
-			<path d="M0,0 h16 v6 h-16 v4 h16 v6 h-16z"/>
+			<path id="rm-cl-path" d="M0,0 h16 v6 h-16 v4 h16 v6 h-16z"/>
+		</clipPath>
+
+		<clipPath id="not-eye">
+			<path id="not-eye" d="M0,0 h16 v2 l-16,14z m16,16 v-11 l-13,11z"/>
 		</clipPath>
 
 		<clipPath id="frame-circle">
@@ -74,10 +78,10 @@
 			m1,1 h12 v9 h-12z m2,-4 h1 v2 h-1z m7,0 h1 v2 h-1 z
 		"/>
 		<path d="
-			M5.25,6  h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z 
-			m-9,2    h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z 
-			m-9,2    h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z 
-			m-9,2    h1 v1 h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z m2.25,0 h1,v1,h-1 z
+			M5.25,6  h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z 
+			m-9,2    h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z 
+			m-9,2    h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z 
+			m-9,2    h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z
 		"/>
 	</symbol>
 	<symbol id="ic-chevron-down"  viewBox="0,0 16,16"><polygon id="sp-chevron" points="8,8 11,5 13,6 8,11 3,6 5,5"/></symbol>
@@ -119,7 +123,7 @@
 		"/>
 	</symbol>
 	<symbol id="ic-download" viewBox="0,0 16,16">
-		<g clip-path="url(#rm-tc)">
+		<g id="clip-desktop" clip-path="url(#rm-tc)">
 			<path id="sp-desktop" d="
 				M2,2 h12 q1,0 1,1 v8 q0,1 -1,1 h-5 c0,2 2,0 3,2 h-8 c1,-2 3,0 3,-2 h-5 q-1,0 -1,-1 v-8 q0,-1 1,-1 z 
 				m0,1 v7 h12 v-7 z
@@ -132,7 +136,7 @@
 		<g id="clip-34sq" clip-path="url(#rm-q2)" transform="rotate(-90,8,8)">
 			<path id="sp-sqr" d="
 				M3,2 q-1,0 -1,1 v10 q0,1 1,1 h10 q1,0 1,-1 v-10 q0,-1 -1,-1z
-					m0,1 h10 v10 h-10z
+					m0.5,1.5 h9 v9 h-9z
 			"/>
 		</g>
 		<use href="#ic-pencil" xlink:href="#ic-pencil" width="50%" height="50%" x="7" y="1" />
@@ -141,9 +145,7 @@
 		<path d="
 			M2,3 h12 q1,0 1,1 v8 q0,1 -1,1 h-12 q-1,0 -1,-1 v-8 q0,-1 1,-1 z 
 			m0,1 l6,5 l6,-5 z 
-			m0,1 v7 l4,-3.5 z 
-			m12,0 l-4,3.5 l4,3.5 z 
-			m-1,7 l-3.5,-3 l-1.5,1.25 l-1.5,-1.25 l-3.5,3 z
+			m0,1 v7 h12 v-7 l-6,5 z
 		"/>
 	</symbol>
 	<symbol id="ic-erase" viewBox="0,0 16,16">
@@ -163,21 +165,20 @@
 		<path d="M7.5,7 l1.5,1.5 l-0.5,0.5 l-1.5,-1.5 z"/>
 	</symbol>
 	<symbol id="ic-eye-close" viewBox="0,0 16,16">
-		<use href="#ic-eye-open" xlink:href="#ic-eye-open"/>
+		<use href="#ic-eye-open" xlink:href="#ic-eye-open" clip-path="url(#not-eye)"/>
 		<polygon points="1,13 1,15 15,3 15,1"/>
 	</symbol>
 	<symbol id="ic-eye-open" viewBox="0,0 16,16">
 		<path d="
-			M1,8  c3,-6 11,-6.5 14,0 c-3,6 -11,6.5 -14,0 z 
-			m1,0  c2.5,5.25 10,4.25 12,0 c-2.5,-5.25 -10,-4.25 -12,0 
-			m6,-3 a3,3 0,1,0 0.1,0 
-			m0,2  a1,1 0,1,1 -0.1,0 
-			m1,-1 a9,4 0,0,1 0,4 a7,4 0,0,0 0,-4 z
+			M1,8  c3,-6 11,-6.5 14,0 c-3,6 -11,6.5 -14,0 z
+			m1.5,0  c2.5,5.25 10,4.25 11.5,0 c-2.5,-5.25 -10,-4.25 -11.5,0
+			m5.5,-3.5 a3,3 0,1,0 0.1,0 z
+			m-2,2 q1,2 2,2.5 l-1,0.5 q-1,0 -1.5,-2z
 		"/>
 	</symbol>
 	
 	<symbol id="ic-floppy-save" viewBox="0,0 16,16">
-		<g clip-path="url(#rm-br)">
+		<g id="clip-floppy" clip-path="url(#rm-br)">
 			<path id="sp-floppy" d="
 				M3,2 h2 v3 h6 v-3 h1 l2,2 v9.5 l-0.5,0.5 h-1.5 v-4 h-8 v4 h-1.5 l-0.5,-0.5 v-11 l0.5,-0.5 z 
 				m6,0 h1 v2 h-1 z
@@ -187,18 +188,17 @@
 	</symbol>
 	
 	<symbol id="ic-gear" viewBox="0,0,16,16">
-		<path id="sp-gear" d="
-			M8,3 a5,5 0,1,0 0.1,0 
-				m0,2 a3,3 0,1,1 -0.1,0 z 
+		<path id="sp-g-teeth" d="
 			M9,1 h-2 l-0.5,2.5 h3 z 
-			M7,15 h2 l0.5,-2.5 h-3 z 
-			M15,9 v-2 l-2.5,-0.5 v3 z 
-			M1,7 v2 l2.5,0.5 v-3 z
-		" />
-		<use href="#sp-gear" xlink:href="#sp-gear" transform="rotate(45,8,8)"/>
+			m-2,14 h2 l0.5,-2.5 h-3 z 
+			m8,-6 v-2 l-2.5,-0.5 v3 z 
+			m-14,-2 v2 l2.5,0.5 v-3 z
+		"/>
+		<path d="M8,3 a5,5 0,1,0 0.1,0 m0,2 a3,3 0,1,1 -0.1,0 z" />
+		<use href="#sp-g-teeth" xlink:href="#sp-g-teeth" transform="rotate(45,8,8)"/>
 	</symbol>
 	
-	<symbol id="ic-hhd" viewBox="0,0 16,16">
+	<symbol id="ic-hdd" viewBox="0,0 16,16">
 		<use href="#sp-dp1" xlink:href="#sp-dp1" y="-1"/>
 		<path d="M2.5,9.5 h11 l-2.5,-6 q-.25,-.5 -0.5,-0.5 h-5 q-0.25,0 -0.5,0.5 z"/>
 	</symbol>
@@ -313,7 +313,7 @@
 		<g clip-path="url(#rm-cl)">
 			<use href="#sp-circle"  xlink:href="#sp-circle"  width="85%" height="85%" x="1.25" y="1.25"/>
 		</g>
-		<path id="sp-rhead" d="M1.65,5.5 l-1,0.5 l2.5,3 l2.5,-3 l-1,-0.5 z"/>
+		<path id="sp-rhead" d="M1.85,5.5 l-1,0.5 l2.5,3 l2.5,-3 l-1,-0.5 z"/>
 		<use href="#sp-rhead" xlink:href="#sp-rhead" transform="rotate(180,8,8)"/>
 	</symbol>
 	<symbol id="ic-remove" viewBox="0,0 16,16">
@@ -383,7 +383,7 @@
 
 
 	<symbol id="sp-circle" viewBox="0,0 16,16">
-		<path d="M8,1 a7,7 0,1,0 0.1,0 m0,1.5 a5.5,5.5 0,1,1 -0.1,0 z"/>
+		<path d="M8,1 a7,7 0,1,0 0.1,0 m0,2 a5,5 0,1,1 -0.1,0 z"/>
 	</symbol>
 
 	<symbol id="u-grid" viewBox="0,0,160,160" >

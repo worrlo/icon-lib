@@ -26,8 +26,10 @@
             "use strict";
             log("document load");
             var template = $("#template").detach(),
+                symbol = $("#symbol").detach(),
                 db = sessionStorage;
             template.removeAttr("id");
+            symbol.removeAttr("id");
         
             function displayIcons(outletId, data) {
                 log("displayIcons called. (total: {0}, outlet: {1})".format(data.length, outletId))
@@ -58,70 +60,129 @@
                     .css("display", "");      // Reset display settings
             });
             log("bind complete");
-            displayIcons("#local", $("#local-icons").find("symbol"));
 
+            $(".row").on("click", ".ic-mod", function() {
+                var ic = $(this).find("use").attr("href");
+                var sym = $(ic);
+                log("loading definition for {0}".format(ic));
+                $("#def").val(
+                    sym.html()
+                        .replace(/\t+</g,"<")
+                        .replace(/\t+"/g,"\"")
+                        .replace(/\t/g,"   ")
+                        .replace(/^\n/,"")
+                );
+                $("#viewBox").val(sym[0].getAttribute("viewBox"));
+                $("#symbolId").val(ic.replace("#",""));
+            });
             $("#draw").click(function() {
-                $("#canvas").html($("#path").val());
+                $("#canvas").html($("#def").val())
+                    [0].setAttribute("viewBox", $("#viewBox").val());
+            });
+            $("#save").click(function(){
+                var ic = $("#symbolId").val();
+                if (ic) {
+                    var sym = $("#"+ ic);
+                    if(sym[0]) {
+                        log("updating defintion for #{0}".format(ic));
+                        sym.html($("#def").val());
+                        sym[0].setAttribute("viewBox",$("#viewBox").val());
+                    }
+                    else {
+                        log("creating definition #{0}".format(ic));
+                        sym = symbol.clone();
+                        sym.attr("id", ic);
+                        sym.html($("#def").val());
+                        sym[0].setAttribute("viewBox", $("#viewBox").val());
+                        $("#local-icons").append(sym);
+                        $("#local").html("");
+                        displayIcons("#local",$("#local-icons").find("symbol"));
+                    }
+                }
+            });
+            $("#def").keydown(function(event) {
+                if (event.which === 9) {
+                    event.preventDefault();
+                    var startPos = $(this).prop("selectionStart"),
+                        stopPos = $(this).prop("selectionEnd"),
+                        lvc = this.value
+                    ;
+                    this.value = lvc.substring(0,startPos);
+                    this.value += "   ";
+                    this.value += lvc.substring(stopPos);
+                    $(this).prop("selecttionStart", startPos + 3)
+                            .prop("selectionEnd", startPos + 3);
+                }
             });
         });
     </script> 
     <style type="text/css">
-        #path {
-            margin-top: 3em;
-            font-family: "Courier New";
-            width: 100%;
-            height: 10em;
-        }
-        .ic-mod {font-size: 12pt;}
-        .ic-mod label {display:inline-block; width: 10em;}
-        .app-icon {
-            width: 10em;
-            height: 10em;
-            border: 1px solid black;
-        }
+        #def {font-family: "Courier New"; width: 100%; height: 15em; font-size:10pt;}
+        .app-icon { border: 1px solid black; fill:blue;}
         .boat {
-            display: inline-block;
+            display:inline-block;
             position: fixed;
             text-align: right;
             top: 0;
             right: 1em;
-            width: 10em;
+            width: 60em;
+            max-width:65%;
             z-index: 99;
             background:white;
         }
+        .ic-mod {font-size: 12pt;}
+        .ic-mod:hover {cursor:pointer; border: 1px solid #36c;}
+
+        .ide {text-align:left;}
+        .ide .app-icon {width:15em; height:15em;}
+        .ide label {margin: 0em 0.5em 0.5em 0em; text-decoration: underline; font-weight: bold;}
     </style> 
 </head>
 <body class="container-fluid">
     <div class="boat">
         <label>Toggle Grid: <input id="grid-toggle" type="checkbox" checked/></label>
+        <div class="ide">
+            <div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="symbolId">Icon ID</label>
+                        <input type="text" id="symbolId" name="symbolId" value=""/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label for="view">viewBox</label>
+                        <input type="text" id="viewBox" name="viewBox" value="0,0,16,16" placeholder="minX,minY,totalX,totalY"/>        
+                    </div>
+                </div>
+                <label for="def">Definition</label>
+                <textarea id="def" name="def"></textarea>
+                <button id="draw">Draw</button>
+                <button id="save">Save</button>
+            </div>
+            <svg class="app-icon" viewBox="0,0,16,16" style="font-size:13pt;">
+                <svg id="canvas" viewBox="0,0,16,16" >
+                </svg>>
+                <use class="grid" href="#u-grid" xlink:href="#u-grid" />
+            </svg>
+        </div>
     </div>
     <div id="template" class="ic-mod">
-        <svg class="app-icon"><use class="ic" xlink:href="" href=""/><use class="grid" xlink:href="#u-grid" href="#u-grid"/></svg>
+        <svg class="app-icon"><use class="ic" xlink:href="" href=""/></svg>
         <label></label>
     </div>
     <div class="row">
-        <div class="col-xs-6">
-            <h1>App Icons</h1>
-            <div id="app">
-
-            </div>
-        </div>
-        <div class="col-xs-6">
-            <div>
-                <textarea id="path"></textarea>
-                <button id="draw">Draw</button>
-            </div>
-            <svg class="app-icon" viewBox="0,0,16,16" style="font-size:13pt;">
-                <g id="canvas">
-                </g>>
-                <use class="grid" href="#u-grid" xlink:href="#u-grid" />
-            </svg>
-            <div id="local">
-                <svg class="app-icon"><use xlink:href="#ic-broadcast"/></svg><br/>
-                <svg class="app-icon"><use xlink:href="#ic-user-alt"/></svg>
-            </div>
+        <div class="col-sm-4">
+            <section>
+                <h3>Local Icons</h3>
+                <div id="local"></div>
+            </section>
+            <section>
+                <h3>App Icons</h3>
+                <div id="app"></div>
+            </section>
         </div>
     </div>
-    <svg id="local-icons" class="render-canvas"></svg>
+    <svg id="local-icons" class="render-canvas">
+        <symbol id="symbol" viewBox="0,0,16,16"></symbol>
+    </svg>
 </body>
 </html>
