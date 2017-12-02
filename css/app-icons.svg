@@ -364,12 +364,12 @@
 	
 	<symbol id="ic-user" viewBox="-8,-8 16,16">
 		<path id="sp-fc1" d="M0,-7 c4,0 4,6 1.5,8 m0.5,-1 v1 l2,1 q3,1 3,5 h-7 v-14z"/>
-		<use xlink:href="#sp-fc1" transform="scale(-1,1)"/>
+		<use href="#sp-fc1" xlink:href="#sp-fc1" transform="scale(-1,1)"/>
 	</symbol>
 	<symbol id="ic-user-alt" viewBox="0,0, 16,16">
 		<g clip-path="url(#frame-circle)">
-			<use xlink:href="#ic-user" width="75%" height="75%" x="2" y="3"/>
-			<use xlink:href="#sp-circle"/>
+			<use href="#ic-user" xlink:href="#ic-user" width="75%" height="75%" x="2" y="3"/>
+			<use href="#sp-circle" xlink:href="#sp-circle"/>
 		</g>
 	</symbol>
 	
