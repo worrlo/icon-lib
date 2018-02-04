@@ -281,7 +281,19 @@
 		<path d="M7,6.5 h2 v0.5 h-2z m-1,1 h4 v0.5 h-4z m1,1 h4 v0.5 h-4z m-1.5,1 h5 v0.5 h-5z"/>
 	</symbol>
 	            
-	            
+	<symbol id="ic-paperclip" viewBox="0,0 16,16">
+    <path d="M12,5 
+          v6 a1,1 0,1,1 -8,0 
+          v-7 a1,1 0,1,1 6,0 
+          v6 a1,1 0,1,1 -4,0 
+          v-4 h1 
+          v4 a1,1 0,1,0 2,0 
+          v-6 a1,1 0,1,0 -4,0
+          v7 a1,1 0,1,0 6,0
+          v-6
+       z
+    "/>
+  </symbol>            
 	<symbol id="ic-pencil" viewBox="0,0 16,16">
 		<path d="M2,11 v3 h3 l6.5,-7 l-3,-3 z M5,13 h-2 v-2 h1 v1 h1 z M9,3.5 l3,3 l1,-1 a1.5,1.5 0,1,0 -3,-3 z"/>
 	</symbol>
