@@ -84,6 +84,23 @@
 			m-9,2    h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z m2.25,0 h1 v1 h-1 z
 		"/>
 	</symbol>
+
+	<symbol id="ic-certificate" viewBox="0,0,16,16">
+		<circle cx="11.25" cy="10" r="2"/>    
+		<path d="
+			M3,4 h10 q1,0 1,1 v3.5 l-1,-1 v-2 
+			q0,-0.5 -0.5,-0.5 h-8.5 v1 h-1 v4.5
+			q0,0.5 0.5,0.5 h4.75 l0.5,1 h-5.75 
+			q-1,0 -1,-1 v-6
+			z
+
+			M11.25,7 a3,3 0,1,0 0.1,0 m0,.5 a2.5,2.5 0,1,1 -0.1,0 z
+				
+			M9,12 l1,.5 l-1,2 l-0.25,-0.5 l-0.5,-0.5 z
+			m4.5,0 l-1,0.5 l1,2 l0.25,-0.5 l0.5,-0.5 z
+		"/>
+	</symbol>
+
 	<symbol id="ic-chevron-down"  viewBox="0,0 16,16"><polygon id="sp-chevron" points="8,8 11,5 13,6 8,11 3,6 5,5"/></symbol>
 	<symbol id="ic-chevron-left"  viewBox="0,0 16,16"><use href="#sp-chevron" xlink:href="#sp-chevron" transform="rotate(90,8,8)"/></symbol>
 	<symbol id="ic-chevron-right" viewBox="0,0 16,16"><use href="#sp-chevron" xlink:href="#sp-chevron" transform="rotate(-90,8,8)"/></symbol>
@@ -198,6 +215,29 @@
 		<use href="#sp-g-teeth" xlink:href="#sp-g-teeth" transform="rotate(45,8,8)"/>
 	</symbol>
 	
+	<symbol id="ic-gem" viewBox="-8,-8,16,16">
+		<path d="
+			M0.25,-7 
+				l4.5,1.75   q0.25,0.25    0.5,0.5    
+				l1.75,5.25  q0.25,0.5     0,0.75
+				l-3.75,4.5  q-0.25,0.25   -0.5,0.25
+				h-5.5       q-0.25,0      -0.5,-0.25
+				l-3.75,-4.5 q-0.25,-0.25  0,-0.75
+				l1.75,-5.25 q0.25,-0.25   0.5,-0.5
+				l4.5,-1.75 
+			z
+			m-0.5,2
+				l-2,0.75    q-0.25,0.25   -0.5,0.5
+				l-0.75,2    q-0.25,0.5    0,0.75
+				l1.5,2.25   q0.25,0.25    0.5,0.25
+				h3          q0.25,0       0.5,-0.25
+				l1.5,-2.25  q0.25,-0.5    0,-0.75
+				l-0.75,-2   q-0.25,-0.25  -0.5,-0.5
+				l-2,-0.75
+			z
+		"/>
+	</symbol>
+
 	<symbol id="ic-hdd" viewBox="0,0 16,16">
 		<use href="#sp-dp1" xlink:href="#sp-dp1" y="-1"/>
 		<path d="M2.5,9.5 h11 l-2.5,-6 q-.25,-.5 -0.5,-0.5 h-5 q-0.25,0 -0.5,0.5 z"/>
@@ -282,18 +322,18 @@
 	</symbol>
 	            
 	<symbol id="ic-paperclip" viewBox="0,0 16,16">
-    <path d="M12,5 
-          v6 a1,1 0,1,1 -8,0 
-          v-7 a1,1 0,1,1 6,0 
-          v6 a1,1 0,1,1 -4,0 
-          v-4 h1 
-          v4 a1,1 0,1,0 2,0 
-          v-6 a1,1 0,1,0 -4,0
-          v7 a1,1 0,1,0 6,0
-          v-6
-       z
-    "/>
-  </symbol>            
+		<path d="M12,5 
+			v6 a1,1 0,1,1 -8,0 
+			v-7 a1,1 0,1,1 6,0 
+			v6 a1,1 0,1,1 -4,0 
+			v-4 h1 
+			v4 a1,1 0,1,0 2,0 
+			v-6 a1,1 0,1,0 -4,0
+			v7 a1,1 0,1,0 6,0
+			v-6
+           z
+        "/>
+    </symbol>            
 	<symbol id="ic-pencil" viewBox="0,0 16,16">
 		<path d="M2,11 v3 h3 l6.5,-7 l-3,-3 z M5,13 h-2 v-2 h1 v1 h1 z M9,3.5 l3,3 l1,-1 a1.5,1.5 0,1,0 -3,-3 z"/>
 	</symbol>
@@ -384,6 +424,21 @@
 			<use href="#sp-circle" xlink:href="#sp-circle"/>
 		</g>
 	</symbol>
+
+	<symbol id="ic-user-2" viewBox="-8,-8,16,16">
+		<path d="
+			M0,1 q6,0 6,5 h-12 m6,-5 q-6,0 -6,5 z
+			M0,-6 c4,0 4,6 0,6 c-4,0 -4,-6 0,-6 z
+		"/>
+	</symbol>
+
+	<symbol id="ic-user-2-alt" viewBox="-8,-8,16,16">
+		<path id="sp-hexagon" d="
+			M0,-7 l6,4 v6 l-6,4 v-2 l3,-1 l2,-4 l-2,-4 l-3,-1z
+			M0,-7 l-6,4 v6 l6,4 v-2 l-3,-1 l-2,-4 l2,-4 l3,-1z
+		"/>
+		<use href="#ic-user-2" width="50%" height="50%" x="-4" y="-4"/>
+	</symbol>
 	
 	<symbol id="ic-warning-sign" viewBox="0,0 16,16">
 		<path d="
@@ -392,7 +447,6 @@
 			m0,-3 h-2 v-4 h2z
 		"/>
 	</symbol>	
-
 
 	<symbol id="sp-circle" viewBox="0,0 16,16">
 		<path d="M8,1 a7,7 0,1,0 0.1,0 m0,2 a5,5 0,1,1 -0.1,0 z"/>
