@@ -474,4 +474,16 @@
 		</g>
 		<use href="#u-gx" xlink:href="#u-gx" transform="rotate(90,80,80)"/>
 	</symbol>
+
+	<symbol id="ic-heartbeat" viewBox="0,0 16,16">
+		<polygon class="top-hb" points="
+        -20,6.75 3.2,6.75 5,4.75 9,9.35 11.20,6.75 40,6.75 
+        40,8.5 11.9,8.5 9,11.75 5,7.25 3.9,8.5 -20,8.5"></polygon>
+    <polygon class="mid-hb" points="
+        -20,7.5 3.5,7.5 5,5.8 9,10.4 11.45,7.5 40,7.5 
+        40,8.5 11.9,8.5 9,11.75 5,7.25 3.9,8.5 -20,8.5"></polygon>
+    <polygon class="bot-hb" points="
+        -20,8 3.65,8 5,6.5 9,11 11.65,8 40,8 
+        40,8.5 11.9,8.5 9,11.75 5,7.25 3.9,8.5 -20,8.5"></polygon>
+	</symbol>
 </svg>
