@@ -1,4 +1,8 @@
-.DS_Store
-.idea
-dist
-.token
+**/*
+
+!.gitattributes
+!.gitignore
+!css
+!js
+!*.html
+!*.md
